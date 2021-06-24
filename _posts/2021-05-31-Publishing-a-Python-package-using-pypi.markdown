@@ -14,11 +14,11 @@ Note - In this post, I'm not going to talk about any legit solution as it doesn'
 As I said earlier, I'm not going to create any legit package. So, If you are here to check out for ideas, then I would suggest you to go through this link - 
 
 Assuming that you have all the pre-requisite requirements. If not follow the below mentioned commands to get started.
-1. pip(most latest version) - python -m pip install -upgrade pip
-2. pip install wheel
-3. pip install twine
-4. pip install setuptools
-5. should posses a `GitHub` account.
+1. **pip(most latest version) - python -m pip install -upgrade pip**
+2. **pip install wheel**
+3. **pip install twine**
+4. **pip install setuptools**
+5. **should posses a `GitHub` account.**
 
 
 Now, let us solve a simple problem "Addition of two numbers".
