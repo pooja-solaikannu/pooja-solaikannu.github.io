@@ -25,7 +25,7 @@ Now, let us solve a simple problem "Addition of two numbers".
 
 ### Step 1 - create a container
 Create a folder in your local computer where in we can create multiple files and folders required for the process. 
-<image>
+
 In my case I have create a folder named `container`. You can use any folder name. 
 
 ### Step 2 - write python files
@@ -41,15 +41,15 @@ def add_two_numbers(a, b)
 As we have completed all the functionality side, we now have to handle other aspects so as to get our python package pubished cleanly.
 
 Include a licence file which stats the best interest of package's usability rules. To understand more about licensing a software package, check out here.
-<image>
+
 
 Now, create a `setup.py` file which contains following contents.
-<image>
+
 
 ### Step 4 - Git Upload and Source distribution
 Upload the entire folder to git using `git push` command.
 
-<image>
+
 
 Run the following command to create a wheel file for the created python package.
 Go inside the folder which contains setup.py file and run this command.
@@ -58,12 +58,12 @@ Go inside the folder which contains setup.py file and run this command.
 python setup.py sdist bdist_wheel
 {% endhighlight %}
 
-<image>
+
 ## Publishing the Python Package to PyPi
 
 ### Step 5 - create an account in Pypi
 To publish any package in python package index, one should have an account with `pypi.org`.
-<image>
+
 
 ### Step 6 - Upload package to Pypi
 To upload the software package to Pypi, use the following command inside cotainer folder(where )
@@ -73,16 +73,16 @@ python -m twine uplaod --repository-url https://upload.pypi.org/legacy/ dist/*
 {% endhighlight %}
 
 If you have got any output like the following, then everything has finished smootly.
-<image>
+
 
 ### Step 7 - Install and test your published package in your local system
 Now, check for the software package that we have published now, is available in pypi.
 
-<image>
+
 
 Now that we have our software package installed in the pypi. Let's install and check whether everything is working fine.
 
-<image>
+
 
 Congratulations! You have a fully functioning software package under your name. 
 
