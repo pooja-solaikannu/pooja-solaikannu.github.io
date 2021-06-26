@@ -32,7 +32,7 @@ Create a folder in your local computer where in we can create multiple files and
 
 In my case I have create a folder named `container`. You can use any folder name. 
 
-![](/assets/image1.png)
+![](/assets/images/image1.png)
 
 
 #### Step 2 - Write python files
@@ -49,16 +49,16 @@ As we have completed all the functionality side, we now have to handle other asp
 
 Include a licence file which stats the best interest of package's usability rules. To understand more about licensing a software package, check out here.
 
-![](assets/image4.png)
+![](/assets/images/image4.png)
 
 Now, create a `setup.py` file which contains following contents.
 
-![](assets/image5.png)
+![](/assets/images/image5.png)
 
 #### Step 4 - Git Upload and Source distribution
 Upload the entire folder to git using `git push` command.
 
-![](assets/image6.png)
+![](/assets/images/image6.png)
 
 Run the following command to create a wheel file for the created python package.
 Go inside the folder which contains setup.py file and run this command.
@@ -67,7 +67,7 @@ Go inside the folder which contains setup.py file and run this command.
 python setup.py sdist bdist_wheel
 {% endhighlight %}
 
-![](assets/image7.png)
+![](/assets/images/image7.png)
 
 ## Publishing the Python Package to PyPi
 
@@ -83,16 +83,16 @@ python -m twine uplaod --repository-url https://upload.pypi.org/legacy/ dist/*
 
 If you have got any output like the following, then everything has finished smootly.
 
-![](assets/image8.png)
+![](/assets/images/image8.png)
 
 #### Step 7 - Install and test your published package in your local system
 Now, check for the software package that we have published now, is available in pypi.
 
-![](assets/image8.2.png)
+![](/assets/images/image8.2.png)
 
 Now that we have our software package installed in the pypi. Let's install and check whether everything is working fine.
 
-![](assets/image9.png)
+![](/assets/images/image9.png)
 
 **Congratulations! You have a fully functioning software package under your name.**
 
