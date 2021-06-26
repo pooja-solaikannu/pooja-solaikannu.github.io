@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey there! I'm Pooja. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I am a ML Researcher with decent interest in web Development. As of 2020, I'm trying to be a better person in all walks of life. So, started trying out everything that I always wanted to do, of which writting is one that I have been thinking about for quite a while now and hopefully this blog could be a positive effort to enhance my writting skills; so, may be one day I'll have poems under my name :D 
 
 
-[jekyll-organization]: https://github.com/jekyll
+P.S Feel free to reach out to my gmail at any case. 
+
+
+Love,
+Pooja Solaikannu
