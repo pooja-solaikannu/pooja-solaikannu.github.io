@@ -3,7 +3,7 @@ layout: "post"
 title: "Publishing a Python Package using pypi"
 ---
 
-As a developer we almost always have the need for for readily available software packages for various purposes. So, To explore about how those packages are made available could be one of the coolest thing to be known and let's say there is a open problem and you have an idea to solve it and think it could help the larger mass, then publishing the solution as python package in PyPi is one of the ways that you could actually extend your help.
+As a developer we almost always have the need for readily available software packages to serve various purposes. So, To explore about how those packages are made available could be one of the coolest thing to be known and let's say there is a open problem and you have an idea to solve it and think it could help the larger mass, then publishing the solution as python package in PyPi is one of the ways that you could actually extend your help.
  
 This blog is going to be about how to publish a python package using PyPi which then can be installed using pip(a python packager manager).
 
@@ -13,7 +13,7 @@ This blog is going to be about how to publish a python package using PyPi which 
 The Python Package Index, abbreviated as PyPI and also known as the Cheese Shop (a reference to the Monty Python's Flying Circus sketch "Cheese Shop"), is the official third-party software repository for Python. It is analogous to CPAN, the repository for Perl. Some package managers, including pip, use PyPI as the default source for packages and their dependencies.
 
 ## Preparing Python Package
-As I said earlier, I'm not going to create any legit package. So, If you are here to check out for ideas, then I would suggest you to go through this link - 
+As I said earlier, I'm not going to create any legit package. So, If you are here to check out for ideas, then I would suggest you to go through this link - [Ideas for Python Package](https://realpython.com/intermediate-python-project-ideas/)
 
 Assuming that you have all the pre-requisite requirements. If not follow the below mentioned commands to get started.
 
