@@ -32,7 +32,7 @@ Create a folder in your local computer where in we can create multiple files and
 
 In my case I have create a folder named `container`. You can use any folder name. 
 
-![](assets/image1.png)
+![](/assets/image1.png)
 
 
 #### Step 2 - Write python files
