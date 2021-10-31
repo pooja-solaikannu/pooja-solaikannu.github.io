@@ -12,9 +12,7 @@ So, This article is about a possible solution for understanding cosine similarit
 
 ## What does mean by cosine similarity?
 Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The smaller the angle, higher the cosine similarity.
-```
-image
-```
+![](/assets/images/cosine_sim.png)
 
 ## Problem statement
 To begin with the solution, we need a problem statement. Since we are trying to undestand cosine similarity, we can check on semantic similarity of words in vector space. 
@@ -68,9 +66,7 @@ for pair in pairs:
 {% endhighlight %}
 
 Thus, the cosine similarity of all pairs are computed and we are storing it as list of tuples in the following format
-```
-image
-```
+![](/assets/images/cosine_sim_format.png)
 
 ## Correlation Plot
 Correlation plots can be used to quickly find insights. It is used to investigate the dependence between multiple variables at the same time and to highlight the most correlated variables in a data table. In this visual, correlation coefficients are colored according to the value.
@@ -99,9 +95,7 @@ sns.heatmap(df, annot=True, linewidths=.5, ax=ax)
 {% endhighlight %}
 
 The plot signifies different similarity scores between pair of words by a spectrum of color.
-```
-image
-```
+![](/assets/images/foo.png)
 In our case we can easily see the semantic similarity of tablet-capsule is higher than tablet-syrup.
 
 Thus, it is evident from the above example that correlation plots serves as a tool in understanding cosine similarity related works.
