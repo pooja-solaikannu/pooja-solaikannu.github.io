@@ -24,7 +24,7 @@ A date and time feature would look like this `2016-01-01 00:00:00`. From this we
 * Is daytime
 * Is night time
 
-For all the above elements we can rely on a single library offered by python, [datetime library](https://docs.python.org/3/library/datetime.html) and [calender library](https://docs.python.org/3/library/calendar.html)
+For all the above elements we can rely on these two libraries offered by python, [datetime library](https://docs.python.org/3/library/datetime.html) and [calender library](https://docs.python.org/3/library/calendar.html)
 
 I have included code sinppets to extract attributes/elements using the above libraries. 
 
@@ -55,6 +55,22 @@ if datetime.now().hour >=0 and datetime.now().hour <= 24:
 else:
     print('Provide a proper time element')
 {% endhighlight %}
+
+Now that we know how to collect the static elements of date features, we'll look briefly into the ways to collect the dynamic elements of it since date and time comes under cyclic categorical data type.
+
+For this, we will entirely rely on a open source library called tsfresh
+>This code has been taken from the reference 1
+
+{% highlight python %}
+from tsfresh.feature_extraction import feature_calculators as fc
+# tsfresh based features. x being the date column
+feature_dict['abs_energy'] = fc.abs_energy(x)
+feature_dict['count_above_mean'] = fc.count_above_mean(x)
+feature_dict['count_below_mean'] = fc.count_below_mean(x)
+feature_dict['mean_abs_change'] = fc.mean_abs_change(x)
+feature_dict['mean_change'] = fc.mean_change(x)
+{% endhighlight %}
+
 
 ### Geo/Location
 
