@@ -45,10 +45,8 @@ word_vec = model_clinical(torch.tensor(tokenizer.encode(word1)).unsqueeze(0))
 print(word_vec)
 {% endhighlight %}
 
-```
-image
-```
-Now that we have the vectors of the words, we can proceed with finding semantic similarity using cosine similarity function from `sklearn` library
+![](/assets/images/model_init.PNG)
+Now that we have our models ready to get vectors of the words, we can proceed with finding semantic similarity using cosine similarity function from `sklearn` library
 {% highlight python %}
 # cosine similarity - function
 def cosine_similarity_vectors(pair):
@@ -66,7 +64,7 @@ for pair in pairs:
 {% endhighlight %}
 
 Thus, the cosine similarity of all pairs are computed and we are storing it as list of tuples in the following format
-![](/assets/images/cosine_sim_format.png)
+![](/assets/images/cosine_sim_format.PNG)
 
 ## Correlation Plot
 Correlation plots can be used to quickly find insights. It is used to investigate the dependence between multiple variables at the same time and to highlight the most correlated variables in a data table. In this visual, correlation coefficients are colored according to the value.
