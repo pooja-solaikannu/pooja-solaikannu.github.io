@@ -59,7 +59,7 @@ else:
 Now that we know how to collect the static elements of date features, we'll look briefly into the ways to collect the dynamic elements of it since date and time comes under cyclic categorical data type.
 
 For this, we will entirely rely on a open source library called tsfresh
->This code has been taken from the reference 1
+>This code has been taken from the book Approaching Almost Any ML Problem by [Abhishek Thakur](https://www.linkedin.com/in/abhi1thakur/)
 
 {% highlight python %}
 from tsfresh.feature_extraction import feature_calculators as fc
@@ -74,7 +74,27 @@ feature_dict['mean_change'] = fc.mean_change(x)
 
 ### Geo/Location
 
+This is one of the less commonly used datatype. It appears only in problems involving transporation.
+Location can be given in terms of `geo code, name, geo co-ordinates`
 
+It is better to convert all other types to geo co-ordinates because we can extract interesting features out of it. The list of elements that can be extracted using geographical co-ordinates are as follows
+
+1. Distance between two geographical co-ordinates
+2. Distance between given geo coordinates and popular landmark of that area
+3. Design a hotspot circle and check if given co-ordinates falls into it or not.
+>If you can collect external data associated with these co-ordinates like population, area type, no.of buildings and so on then way more related features can be extracted but you need to be careful in this case as we number of features in not directly proportional to model performance and very minimal we might end up in overfitting.
+
+As far as finding distances between tqo geo points, we can rely on one of the three distances; Manhattan distance, Euclidean distance and Haversine Distance. More information regarding pros and cons of each distance can be found [here](https://towardsdatascience.com/spatial-distance-and-machine-learning-2cab72fc6284)
+
+I'll go through the simplest distance metric of geo points i.e., Haversine distance
+
+{% highlight python %}
+import haversine as hs
+def haversine_np(lon1, lat1, lon2, lat2):
+    loc1=(lat1, lon1)
+    loc2=(lat2, long2)
+    return hs.haversine(loc1,loc2)
+{% endhighlight %}
 
 #### References
 1. [Approaching Almost Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf)
