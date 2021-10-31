@@ -18,5 +18,6 @@ I hope the context of the post is clear now and let's gets started.
 
 
 #### References
-![](https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf)
-![](https://geopy.readthedocs.io/en/stable/#module-geopy.distance)
+![Approaching Almost Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf)
+
+![GeoPy](https://geopy.readthedocs.io/en/stable/#module-geopy.distance)
