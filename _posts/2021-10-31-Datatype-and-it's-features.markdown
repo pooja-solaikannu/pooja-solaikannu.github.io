@@ -79,9 +79,10 @@ Location can be given in terms of `geo code, name, geo co-ordinates`
 
 It is better to convert all other types to geo co-ordinates because we can extract interesting features out of it. The list of elements that can be extracted using geographical co-ordinates are as follows
 
-1. Distance between two geographical co-ordinates
-2. Distance between given geo coordinates and popular landmark of that area
-3. Design a hotspot circle and check if given co-ordinates falls into it or not.
+* Distance between two geographical co-ordinates
+* Distance between given geo coordinates and popular landmark of that area
+* Design a hotspot circle and check if given co-ordinates falls into it or not.
+
 >If you can collect external data associated with these co-ordinates like population, area type, no.of buildings and so on then way more related features can be extracted but you need to be careful in this case as we number of features in not directly proportional to model performance and very minimal we might end up in overfitting.
 
 As far as finding distances between tqo geo points, we can rely on one of the three distances; Manhattan distance, Euclidean distance and Haversine Distance. More information regarding pros and cons of each distance can be found [here](https://towardsdatascience.com/spatial-distance-and-machine-learning-2cab72fc6284)
